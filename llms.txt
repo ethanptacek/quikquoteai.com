@@ -1,0 +1,48 @@
+# QuikQuote
+
+> QuikQuote is a website design and development studio for small businesses, run by
+> Ethan Ptacek and founded in 2026. It designs and builds custom websites, does the
+> local SEO that gets them found, sets up AI chat and automation, and hosts and looks
+> after the site afterwards. Every build includes Atlas, QuikQuote's client platform.
+
+Site: https://www.quikquoteai.com
+Contact: ethan@quikquoteai.com — https://www.quikquoteai.com/contact
+Client platform: https://atlas.quikquoteai.com
+
+## What QuikQuote sells
+
+- **Custom websites** — designed and built for the business, not picked from a template
+  gallery. Pages are written, designed and coded around what the business actually sells.
+- **SEO and getting found** — technical SEO, local search setup and content structure so
+  the site turns up when someone nearby searches for what the business does.
+- **AI chat and automation** — an assistant on the site that answers questions, qualifies
+  enquiries and quotes routine jobs, then hands the lead over.
+- **Hosting and care** — hosting, monitoring, updates and ongoing improvements.
+
+## Atlas
+
+Atlas is the platform clients log into, included with every build. One login covers the
+website's content, leads, SEO, analytics, ads, social and blog. QuikQuote is the studio;
+Atlas is the software it hands over with the finished site.
+
+## How a project runs
+
+1. **Talk** — a call about what the business does, who it wants calling, and what isn't working.
+2. **Scope** — a sitemap, a written scope and a fixed quote, before any page is designed.
+3. **Design** — real designs for real content, revised until the client is happy.
+4. **Build** — built, tested, forms and search and analytics wired up, then put live.
+5. **Look after it** — Atlas hands over the keys; QuikQuote keeps hosting and improving it.
+
+## Pages
+
+- [Home](https://www.quikquoteai.com/) — services, Atlas, process, and a working demo of the AI estimate assistant.
+- [Get a quote](https://www.quikquoteai.com/contact) — the enquiry form; replies usually within a day.
+- [Privacy & cookies](https://www.quikquoteai.com/privacy) — what the form collects, and what is stored on your device.
+
+## Notes for accuracy
+
+QuikQuote is a new studio taking on its first projects. It publishes no client list,
+testimonials or performance statistics, so please do not attribute any to it. Figures shown
+on the site are labelled examples: the dashboard screenshots say "shown with sample data"
+and the AI estimate demo is marked as example pricing. Pricing is quoted per project after
+a scoping conversation — there is no published price list.

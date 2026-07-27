@@ -1,0 +1,19 @@
+{
+  "name": "QuikQuote — website design & SEO for small businesses",
+  "short_name": "QuikQuote",
+  "description": "A website studio for small businesses. Custom sites, local SEO, AI intake, and Atlas — one login to run the whole thing.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f0ede6",
+  "theme_color": "#f0ede6",
+  "lang": "en-US",
+  "icons": [
+    { "src": "/assets/brand/favicon-96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

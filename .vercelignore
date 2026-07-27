@@ -1,0 +1,10 @@
+.env*
+.env*.local
+*.md
+.vscode
+.claude
+.gitignore
+.DS_Store
+node_modules
+scripts
+supabase
