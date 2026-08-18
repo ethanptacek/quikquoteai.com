@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sign in to the QuikQuoteAI workspace.">
+  <meta name="description" content="Sign in to your QuikQuoteAI workspace to manage quotes, leads and client accounts — the invite-only dashboard included with every QuikQuote build.">
   <meta name="theme-color" content="#0d0b08">
-  <meta name="robots" content="noindex">
   <title>Sign in — QuikQuoteAI</title>
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +31,14 @@
         <span class="status-chip"><span class="pulse-dot"></span>Workspace</span>
         <h1>The desk behind <em>the quotes.</em></h1>
         <p class="lede" style="max-width:44ch;">Quotes, leads, and clients — the working side of QuikQuoteAI. Access is invite-only while this is built in the open.</p>
+        <p class="lede" style="max-width:46ch;">It's the same dashboard described on the QuikQuoteAI homepage: a live inbox for text-quote conversations, a running list of estimates with shareable receipts, and — for the studio side — a leads board and client roster. It ships with every build, not sold separately.</p>
+        <p class="lede" style="max-width:46ch;">Each login only ever sees its own business — quotes, conversations and settings for that account and nothing else. Owners get the wider view: every client, every lead, every quote across the studio.</p>
+        <ul class="info-list" style="max-width:46ch;">
+          <li>Dashboard — open quotes, win rate and the latest activity, at a glance.</li>
+          <li>Inbox — every text-quote conversation your AI assistant has run, in one thread.</li>
+          <li>Quotes — every estimate you've sent, each one a link a customer can accept online.</li>
+          <li>Settings — your name, password, and (for owners) client access and sample data.</li>
+        </ul>
       </div>
       <p class="mono-note" style="position:relative;">NO SELF-SERVE SIGNUPS · ETHAN SETS UP EVERY ACCOUNT</p>
     </section>
@@ -60,8 +67,10 @@
         </div>
 
         <div style="display:grid; gap:8px;">
+          <p class="mono-note">FIRST TIME SIGNING IN? YOU'LL BE ASKED TO SET YOUR OWN PASSWORD IN PLACE OF THE TEMPORARY ONE ETHAN SENT.</p>
+          <p class="mono-note">THERE'S NO SEPARATE CHARGE FOR THIS LOGIN — IT'S PART OF THE QUIKQUOTE BUILD ITSELF.</p>
           <p class="mono-note">NO ACCOUNT? <a href="/contact" style="color:var(--ember-hot);">SAY HELLO</a> AND GET SET UP.</p>
-          <p class="mono-note">FORGOT YOUR PASSWORD? EMAIL <a href="mailto:ethan@quikquoteai.com" style="color:var(--ember-hot);">ETHAN@QUIKQUOTEAI.COM</a> FOR A RESET.</p>
+          <p class="mono-note">FORGOT YOUR PASSWORD? EMAIL <a href="mailto:ethan@quikquoteai.com" style="color:var(--ember-hot);">ETHAN@QUIKQUOTEAI.COM</a> FOR A RESET, USUALLY SORTED THE SAME DAY.</p>
         </div>
       </div>
     </section>
@@ -69,5 +78,6 @@
 
   <script src="assets/config.js"></script>
   <script type="module" src="assets/portal.js"></script>
+  <script src="/js/atlas.js" defer></script>
 </body>
 </html>

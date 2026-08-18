@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Your estimate, prepared with QuikQuoteAI.">
+  <meta name="description" content="See your QuikQuoteAI estimate — the price range, service details, and a one-tap way to accept or decline before any work is booked.">
   <meta name="theme-color" content="#0d0b08">
-  <meta name="robots" content="noindex">
   <title>Your estimate — QuikQuoteAI</title>
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +23,7 @@
       place-items: center;
       padding: clamp(24px, 5vw, 64px) 20px;
       position: relative;
+      gap: 36px;
     }
     .q-stack { display: grid; gap: 26px; justify-items: center; width: 100%; position: relative; }
     .q-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
@@ -34,11 +34,31 @@
     }
     .q-brand a { color: var(--ember-hot); }
     .q-answer { font-family: var(--font-mono); font-size: 13px; color: var(--text-2); text-align: center; max-width: 46ch; }
+    .q-intro { max-width: 580px; text-align: center; display: grid; gap: 14px; justify-items: center; }
+    .q-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin: 2px 0 4px;
+    }
+    .q-copy { font-size: 14px; line-height: 1.7; color: var(--text-2); max-width: 54ch; }
   </style>
 </head>
 <body>
   <main class="q-page">
     <div class="hero-bg"></div>
+
+    <section class="q-intro">
+      <p class="mono-note">Estimate receipt · QuikQuoteAI</p>
+      <h1 class="q-h1">Your estimate, ready to review.</h1>
+      <p class="q-copy">This page holds the estimate a local business sent you after a short back-and-forth with their QuikQuoteAI text assistant. It's built the same way every QuikQuoteAI quote is: a plain-language description of the job, a price range instead of a single made-up number, and a note on timing — nothing hidden, nothing that requires an account to view.</p>
+      <p class="q-copy">It's meant for anyone who's texted a QuikQuoteAI-powered business — a cleaner, a landscaper, a painter, a mover — and wants the numbers in front of them before committing to anything. Below you'll find the service that was scoped, any line items behind the total, the window you asked for, and the estimate itself as a range. Ranges, not promises: the business confirms the final price before any work begins.</p>
+      <p class="q-copy">There's no cost and no obligation attached to this page — viewing it is free, and so is accepting or declining. If the range works for you, accept it right here and the business will follow up to lock in a time. If it doesn't, decline it just as easily; either answer gets logged straight back to the business so nothing falls through the cracks.</p>
+      <p class="q-copy">This receipt system is part of Atlas, the client platform QuikQuote builds into every website it makes. If you run a business and want customers quoting themselves this way, <a href="/contact" style="color:var(--ember-hot);">get in touch</a> and we'll show you how it works.</p>
+    </section>
+
     <div class="q-stack" id="q-root">
       <span class="mono-note">FETCHING YOUR ESTIMATE…</span>
     </div>
@@ -143,5 +163,6 @@
         .catch((e) => fail(e.message.toUpperCase()));
     }
   </script>
+  <script src="/js/atlas.js" defer></script>
 </body>
 </html>

@@ -4,5 +4,6 @@
   "type": "module",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.114.0"
-  }
+  },
+  "devDependencies": {}
 }

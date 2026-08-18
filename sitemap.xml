@@ -2,20 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.quikquoteai.com/</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.quikquoteai.com/app</loc>
+  </url>
+  <url>
+    <loc>https://www.quikquoteai.com/chatbot</loc>
   </url>
   <url>
     <loc>https://www.quikquoteai.com/contact</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.quikquoteai.com/portal</loc>
   </url>
   <url>
     <loc>https://www.quikquoteai.com/privacy</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.quikquoteai.com/q</loc>
   </url>
 </urlset>

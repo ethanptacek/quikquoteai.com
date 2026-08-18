@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="QuikQuoteAI workspace — quotes, leads, and clients.">
   <meta name="theme-color" content="#0d0b08">
-  <meta name="robots" content="noindex">
   <title>Workspace — QuikQuoteAI</title>
   <script>try { document.documentElement.dataset.theme = localStorage.getItem('qq-theme') || 'dark'; } catch (e) {}</script>
-  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,6 +82,15 @@
     </main>
   </div>
 
+  <section class="ws-about" style="max-width:900px; margin:0 auto; padding:56px 24px 84px; border-top:1px solid var(--line);">
+    <p class="eyebrow" style="font-family:var(--font-mono); font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-3); margin-bottom:14px;">About this workspace</p>
+    <h1 style="font-family:var(--font-display); font-size:clamp(28px,3.4vw,44px); line-height:1.05; letter-spacing:-0.02em; margin:0 0 18px; color:var(--text);">Atlas — the QuikQuoteAI workspace.</h1>
+    <p style="color:var(--text-2); font-size:15.5px; line-height:1.75; max-width:70ch; margin-bottom:16px;">Atlas is the software half of a QuikQuote build — the dashboard every client logs into once their site is live. It isn't a separate product with its own subscription; it comes included with the site itself, and it covers the day-to-day of running the business: quotes, conversations, leads and client details, all behind one login.</p>
+    <p style="color:var(--text-2); font-size:15.5px; line-height:1.75; max-width:70ch; margin-bottom:16px;">Inside, the <b>Dashboard</b> totals up open quotes, win rate and recent activity at a glance. The <b>Inbox</b> holds every text-quote conversation the AI assistant has had with a customer, estimate attached. <b>Quotes</b> lists every estimate ever sent, each one a shareable receipt a customer can accept or decline online. Owners also get a <b>Leads</b> pipeline for enquiries from the website, and a <b>Clients</b> screen for managing which businesses and logins have access to what.</p>
+    <p style="color:var(--text-2); font-size:15.5px; line-height:1.75; max-width:70ch; margin-bottom:16px;">This workspace is for QuikQuote clients — small business owners who've had a site built and want to see, in one place, what their AI assistant has quoted and who's asked for a quote lately. Logins are set up individually; there's no public sign-up, and each login only ever sees the business it belongs to.</p>
+    <p style="color:var(--text-2); font-size:15.5px; line-height:1.75; max-width:70ch;">If you've been given a login, head to the <a href="/portal" style="color:var(--ember-hot);">sign-in page</a> and use the email and temporary password you were sent — you'll be asked to set your own on first sign-in. If you don't have one yet and think you should, <a href="/contact" style="color:var(--ember-hot);">get in touch</a> and it'll be set up.</p>
+  </section>
+
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
   <aside class="drawer" id="drawer" aria-label="Detail panel">
     <div class="drawer-head">
@@ -97,5 +105,6 @@
 
   <script src="assets/config.js"></script>
   <script type="module" src="assets/app.js"></script>
+  <script src="/js/atlas.js" defer></script>
 </body>
 </html>
