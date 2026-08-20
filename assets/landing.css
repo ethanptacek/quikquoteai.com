@@ -17,6 +17,7 @@
   --ink-3:      #808598;
 
   --navy:       #24418D;
+  --veyra:      #3D63C9;   /* Veyra Security's accent, for its mark only */
   --navy-deep:  #131C33;
   --green:      #1E7A3C;
 
@@ -1237,9 +1238,40 @@ body.consent-open { overflow: hidden; }
    grid can carry its own breakpoints.
    ============================================================ */
 
-/* the engraved hallmark used wherever Veyra is named */
-.veyra-mark { flex: none; display: inline-flex; width: 22px; height: 22px; color: var(--navy); }
-.veyra-mark svg { width: 100%; height: 100%; stroke: currentColor; fill: none; }
+/* Veyra's own mark, kept two-tone as they draw it: outer V in our ink,
+   inner V in their accent. Sized per context by the rules below. */
+.veyra-mark { flex: none; display: inline-flex; align-items: center; color: var(--ink); }
+.veyra-mark svg { width: 22px; height: 22px; fill: none; }
+.veyra-mark .v-out { stroke: currentColor; }
+.veyra-mark .v-in { stroke: var(--veyra); }
+
+/* mark + name, linking out to Veyra — the name is the link, never a URL */
+.veyra-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s var(--ease), opacity 0.2s var(--ease);
+}
+.veyra-tag:hover, .veyra-tag:hover b { color: var(--veyra); }
+.veyra-tag:hover .v-out { stroke: var(--veyra); }
+
+/* the full lockup, used once on /security where Veyra is introduced */
+.veyra-lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  color: var(--ink);
+  transition: opacity 0.2s var(--ease);
+}
+.veyra-lockup:hover { opacity: 0.7; }
+.veyra-lockup .veyra-mark svg { width: 21px; height: 21px; }
+.veyra-word {
+  font-size: 15px;
+  font-weight: 650;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
 
 /* ---------- home page trust signal (one line under the hero CTA) ----------
    Deliberately weightless: no card, no fill — a single rule of micro-type
@@ -1253,7 +1285,7 @@ body.consent-open { overflow: hidden; }
   justify-content: center;
   gap: 5px 13px;
 }
-.trust-seal .veyra-mark { width: 15px; height: 15px; }
+.trust-seal .veyra-mark svg { width: 15px; height: 15px; }
 .trust-seal b {
   font-size: 10px;
   font-weight: 700;
@@ -1266,9 +1298,8 @@ body.consent-open { overflow: hidden; }
 .trust-seal .ulink { flex: none; font-size: 10px; }
 
 /* ---------- the badge, wherever it identifies the layer ---------- */
-.hero-badge.is-static { cursor: default; }
-.hero-badge.is-static:hover { border-color: var(--rule-2); color: var(--ink-2); }
-.hero-badge .veyra-mark { width: 16px; height: 16px; margin: -3px 0; }
+.hero-badge .veyra-mark svg { width: 15px; height: 15px; }
+.hero-badge:hover .v-out { stroke: var(--navy); }
 .page-head .hero-badge { margin-top: clamp(26px, 3vw, 34px); }
 .page-head.sec-head { padding-bottom: clamp(46px, 5.5vw, 74px); }
 
