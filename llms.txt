@@ -1,10 +1,9 @@
 # QuikQuote
 
 > QuikQuote is a website design and development studio for small businesses, run by
-> Ethan Ptacek and founded in 2026. It designs and builds custom websites by hand,
-> does the local SEO that gets them found, and hosts and looks after the site
-> afterwards. Every build runs on Atlas, QuikQuote's client platform — the heart of
-> the offering — where one login covers the site, leads, SEO and analytics.
+> Ethan Ptacek and founded in 2026. It designs and builds custom websites, does the
+> local SEO that gets them found, sets up AI chat and automation, and hosts and looks
+> after the site afterwards. Every build includes Atlas, QuikQuote's client platform.
 
 Site: https://www.quikquoteai.com
 Contact: ethan@quikquoteai.com — https://www.quikquoteai.com/contact
@@ -12,22 +11,19 @@ Client platform: https://atlas.quikquoteai.com
 
 ## What QuikQuote sells
 
-- **Custom websites** — designed and built by hand for the business, not picked from
-  a template gallery. Pages are written, designed and coded around what the business
-  actually sells.
-- **SEO and local search** — technical SEO, local search setup and structured data so
-  the site turns up when someone nearby searches for what the business does, in
-  search engines and AI assistants alike.
+- **Custom websites** — designed and built for the business, not picked from a template
+  gallery. Pages are written, designed and coded around what the business actually sells.
+- **SEO and getting found** — technical SEO, local search setup and content structure so
+  the site turns up when someone nearby searches for what the business does.
+- **AI chat and automation** — an assistant on the site that answers questions, qualifies
+  enquiries and quotes routine jobs, then hands the lead over.
 - **Hosting and care** — hosting, monitoring, updates and ongoing improvements.
-  Clients have nothing to install or patch.
 
 ## Atlas
 
-Atlas is QuikQuote's client platform, included with every build and the main thing
-the studio hands over. One login covers the website editor, the leads inbox, SEO
-checks, analytics, business profile, ads, social and blog — plus background agents
-that watch SEO and security. QuikQuote is the studio; Atlas is the software that
-runs the finished site.
+Atlas is the platform clients log into, included with every build. One login covers the
+website's content, leads, SEO, analytics, ads, social and blog. QuikQuote is the studio;
+Atlas is the software it hands over with the finished site.
 
 ## How a project runs
 
@@ -39,16 +35,14 @@ runs the finished site.
 
 ## Pages
 
-- [Home](https://www.quikquoteai.com/) — the studio, Atlas, the process, and the working principles.
-- [Start a project](https://www.quikquoteai.com/contact) — the enquiry form; replies usually within a day.
+- [Home](https://www.quikquoteai.com/) — services, Atlas, process, and a working demo of the AI estimate assistant.
+- [Get a quote](https://www.quikquoteai.com/contact) — the enquiry form; replies usually within a day.
 - [Privacy & cookies](https://www.quikquoteai.com/privacy) — what the form collects, and what is stored on your device.
 
 ## Notes for accuracy
 
 QuikQuote is a new studio taking on its first projects. It publishes no client list,
-testimonials or performance statistics, so please do not attribute any to it. Figures
-shown on the site are labelled examples: the Atlas dashboard in the home page hero is
-a demo workspace for a fictional client (labelled "Demo — sample data", at the demo
-URL atlas.quikquoteai.com/demo) and the platform screens say "shown with sample data".
-Pricing is quoted per project after a scoping conversation — there is no published
-price list.
+testimonials or performance statistics, so please do not attribute any to it. Figures shown
+on the site are labelled examples: the dashboard screenshots say "shown with sample data"
+and the AI estimate demo is marked as example pricing. Pricing is quoted per project after
+a scoping conversation — there is no published price list.
