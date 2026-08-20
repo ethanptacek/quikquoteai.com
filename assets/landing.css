@@ -1230,13 +1230,111 @@ body.consent-open { overflow: hidden; }
   .app-top .app-btn { display: none; }
 }
 
+/* ============================================================
+   Security — the Veyra layer
+   Reuses the ledger system: hairline rules, navy ink, small
+   caps. Placed after the responsive block so the capability
+   grid can carry its own breakpoints.
+   ============================================================ */
+
+/* the engraved hallmark used wherever Veyra is named */
+.veyra-mark { flex: none; display: inline-flex; width: 22px; height: 22px; color: var(--navy); }
+.veyra-mark svg { width: 100%; height: 100%; stroke: currentColor; fill: none; }
+
+/* ---------- home page trust signal (under the hero CTA) ---------- */
+.trust-seal {
+  margin: clamp(30px, 3.6vw, 44px) auto 0;
+  width: fit-content;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 2vw, 22px);
+  padding: 13px 20px 14px;
+  border: 1px solid var(--rule);
+  background: rgba(252, 250, 244, 0.55);
+  text-align: left;
+  transition: border-color 0.25s var(--ease), background 0.25s var(--ease);
+}
+.trust-seal:hover { border-color: var(--rule-2); background: var(--card); }
+.trust-seal-copy { min-width: 0; }
+.trust-seal-copy b {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.trust-seal-copy span { display: block; margin-top: 4px; font-size: 11.5px; line-height: 1.5; color: var(--ink-3); }
+.trust-seal .ulink { flex: none; font-size: 10px; }
+
+/* ---------- the badge, wherever it identifies the layer ---------- */
+.hero-badge.is-static { cursor: default; }
+.hero-badge.is-static:hover { border-color: var(--rule-2); color: var(--ink-2); }
+.hero-badge .veyra-mark { width: 16px; height: 16px; margin: -3px 0; }
+.page-head .hero-badge { margin-top: clamp(26px, 3vw, 34px); }
+.page-head.sec-head { padding-bottom: clamp(46px, 5.5vw, 74px); }
+
+/* ---------- what Veyra reviews (reuses .form-card / .form-head) ---------- */
+.sec-card .form-head { margin-bottom: 4px; }
+@media (max-width: 620px) { .sec-card .form-head { flex-wrap: wrap; gap: 4px 12px; } }
+.sec-row { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+.sec-row:last-child { border-bottom: 0; padding-bottom: 2px; }
+.sec-row-ic { flex: none; width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid var(--rule); background: var(--paper); }
+.sec-row-ic svg { width: 15px; height: 15px; stroke: var(--navy); fill: none; stroke-width: 1.3; }
+.sec-row b { display: block; font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); }
+.sec-row p { margin-top: 5px; font-size: 12.5px; line-height: 1.6; color: var(--ink-2); }
+
+/* ---------- prose blocks on /security ---------- */
+.sec-body p { font-size: 14px; line-height: 1.75; color: var(--ink-2); max-width: 62ch; }
+.sec-body p + p { margin-top: 16px; }
+.sec-body b { color: var(--ink); font-weight: 600; }
+.sec-stamps { margin-top: clamp(38px, 4.5vw, 58px); }
+.sec-body .ulink, .sec-body .aside-links { margin-top: 26px; }
+
+/* the footer's small print carries the badge too */
+.footer-bottom a { transition: color 0.2s; }
+.footer-bottom a:hover { color: var(--navy); }
+
+/* ---------- capability grid: six cells, three up ---------- */
+.badges.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.badges.cols-3 .badge { border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.badges.cols-3 .badge:nth-child(-n+3) { border-top: 0; }
+.badges.cols-3 .badge:nth-child(3n+1) { border-left: 0; }
+.badges.cols-3 .badge .d { max-width: 32ch; margin-inline: auto; }
+
+@media (max-width: 900px) {
+  .badges.cols-3 { grid-template-columns: repeat(2, 1fr); }
+  .badges.cols-3 .badge { border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+  .badges.cols-3 .badge:nth-child(-n+2) { border-top: 0; }
+  .badges.cols-3 .badge:nth-child(2n+1) { border-left: 0; }
+}
+
+@media (max-width: 560px) {
+  .badges.cols-3 { grid-template-columns: 1fr; }
+  .badges.cols-3 .badge { border-left: 0; border-top: 1px solid var(--rule); }
+  .badges.cols-3 .badge:first-child { border-top: 0; }
+}
+
+@media (max-width: 640px) {
+  .trust-seal {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 18px 16px;
+  }
+  .trust-seal .ulink { margin-top: 2px; }
+}
+
 /* ---------- motion preferences ---------- */
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   .chart .chart-line { stroke-dashoffset: 0; transition: none; }
   .chart .chart-area { opacity: 1; transition: none; }
   .report-radar .radar-data { transform: none; opacity: 1; transition: none; }
-  .btn, .step-card, .role, .ulink .arr, .hero-badge .arr { transition: none; }
+  .btn, .step-card, .role, .ulink .arr, .hero-badge .arr, .trust-seal { transition: none; }
   .plate-media video, .footer-plate video { display: none; }
 }
 
