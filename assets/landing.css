@@ -926,6 +926,126 @@ blockquote.talk-quote em { color: var(--navy); }
 .footer-plate video { position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease; }
 .footer-plate video.is-playing { opacity: 1; }
 
+/* ---------- subpages: contact & thanks ---------- */
+.page-head { padding: clamp(52px, 6.5vw, 92px) 0 0; }
+.page-head h1 { font-size: clamp(38px, 5vw, 62px); }
+.page-head .label { margin-bottom: 20px; }
+.page-head .lede { margin-top: 22px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(32px, 5vw, 84px);
+  align-items: start;
+  padding: clamp(44px, 5.5vw, 72px) 0 var(--section-y);
+}
+
+.next-list { margin-top: 34px; border-top: 1px solid var(--rule); }
+.next-item { display: flex; gap: 18px; padding: 16px 2px; border-bottom: 1px solid var(--rule); }
+.next-item .n {
+  flex: none;
+  min-width: 26px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 27px;
+  line-height: 1.05;
+  color: var(--navy);
+}
+.next-item h3 { font-size: 10.5px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; }
+.next-item p { margin-top: 5px; font-size: 12.5px; line-height: 1.6; color: var(--ink-2); }
+
+.aside-links { margin-top: 30px; display: grid; gap: 16px; justify-items: start; }
+.aside-note { margin-top: 26px; }
+
+.form-card {
+  background: var(--card);
+  border: 1px solid var(--rule-2);
+  box-shadow: var(--shadow-card);
+  padding: clamp(22px, 3vw, 36px);
+}
+.form-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 24px;
+}
+.form-head .replies {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.form-head .replies::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+
+.field { margin-bottom: 18px; }
+.field label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 8px;
+}
+.field .opt { color: var(--ink-3); letter-spacing: 0.08em; }
+.field input, .field textarea {
+  width: 100%;
+  background: var(--paper);
+  border: 1px solid var(--rule-2);
+  border-radius: 0;
+  padding: 13px 14px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ink);
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--ink-3); }
+.field input:focus, .field textarea:focus {
+  outline: none;
+  border-color: var(--navy);
+  background: var(--card);
+  box-shadow: 0 0 0 3px rgba(36, 65, 141, 0.1);
+}
+.field textarea { min-height: 150px; resize: vertical; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-grid .field { margin-bottom: 18px; }
+
+.form-foot { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-top: 4px; }
+.form-note { font-size: 11.5px; line-height: 1.5; color: var(--ink-3); }
+.form-status { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
+.form-status.err { color: #A3452F; }
+.btn[disabled] { opacity: 0.55; cursor: default; transform: none; }
+
+.thanks-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: clamp(32px, 5vw, 84px);
+  align-items: center;
+  padding: clamp(44px, 5.5vw, 72px) 0 var(--section-y);
+}
+.received {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 16px;
+  border: 1px solid rgba(30, 122, 60, 0.35);
+  border-radius: 999px;
+  background: rgba(30, 122, 60, 0.06);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.received::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 3px rgba(30, 122, 60, 0.14); }
+
 /* ---------- reveals ---------- */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
 .reveal.in-view { opacity: 1; transform: none; }
@@ -1048,6 +1168,8 @@ body.consent-open { overflow: hidden; }
 }
 
 @media (max-width: 900px) {
+  .contact-grid, .thanks-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; gap: 0; }
   .nav-links { display: none; }
   .nav-cta .nav-signin { display: none; }
   .nav-burger { display: flex; }
