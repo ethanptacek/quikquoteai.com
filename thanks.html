@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Got it — QuikQuote</title>
   <meta name="description" content="Message received — thanks for reaching out to QuikQuote.">
-  <meta name="theme-color" content="#f0ede6">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#F8F5EE">
 
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -14,20 +15,24 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&amp;display=swap">
+  <link rel="stylesheet" href="assets/landing.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="nav-wrap">
+  <!-- ================= NAV ================= -->
+  <div class="nav-wrap" id="nav">
     <div class="container nav">
-      <a class="logo" href="/" aria-label="QuikQuote — home"><svg class="logo-q" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><path d="M28.353 52.681A21 21 0 1 1 51.605 39.526" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M41.8 47.69 30.51 60.46 27.84 51.56Z" fill="currentColor"/><path d="M34.6 33.8 51.8 50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg><span>QuikQuote</span></a>
+      <a class="logo" href="/" aria-label="QuikQuote — home">
+        <svg class="logo-q" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false"><path d="M28.353 52.681A21 21 0 1 1 51.605 39.526" stroke="currentColor" stroke-width="6" stroke-linecap="round"/><path d="M41.8 47.69 30.51 60.46 27.84 51.56Z" fill="currentColor"/><path d="M34.6 33.8 51.8 50" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg>
+        <span>quikquote</span>
+      </a>
       <nav class="nav-links" aria-label="Main">
-        <a href="/#work">01 Services</a>
-        <a href="/#platform">02 Atlas</a>
-        <a href="/#process">03 Process</a>
-        <a href="/#demo">04 Demo</a>
+        <a href="/#work">Websites</a>
+        <a href="/#atlas">Atlas</a>
+        <a href="/#process">Process</a>
+        <a href="/#principles">Principles</a>
       </nav>
       <div class="nav-cta">
         <a class="btn btn-sm btn-solid" href="/"><span>Back home</span></a>
@@ -36,74 +41,88 @@
   </div>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container two-col" style="align-items:center;">
-        <div>
-          <span class="status-chip"><span class="pulse-dot"></span>Message received</span>
-          <h1 style="margin-top:26px;">Got it. <em>Talk soon.</em></h1>
-          <p class="lede" style="margin-top:26px;">Your message is in — it goes straight to Ethan, not into a ticket queue. Expect a real reply, usually within a day, with questions and a rough idea of scope and price.</p>
-          <div class="cta-row">
-            <a class="btn btn-solid" href="/"><span>Back home</span></a>
-            <a class="btn" href="/#demo"><span>Try the AI demo</span></a>
-          </div>
-        </div>
-        <div>
-          <div class="device" style="max-width:360px; margin-inline:auto;">
-            <div class="device-head">
-              <span class="device-dots"><i></i><i></i><i></i></span>
-              <span>atlas · leads</span>
-              <span>✓</span>
-            </div>
-            <div class="device-body" style="min-height:0;">
-              <div class="receipt">
-                <div class="receipt-head"><span>QUIKQUOTE</span><span>MSG RECEIPT</span></div>
-                <div class="receipt-row"><span class="k">Status</span><span class="v">Delivered</span></div>
-                <div class="receipt-row"><span class="k">Landed in</span><span class="v">Atlas inbox</span></div>
-                <div class="receipt-row"><span class="k">Read by</span><span class="v">A real human</span></div>
-                <div class="receipt-total"><span>Thanks</span><span class="amount">×1</span></div>
-                <span class="stamp">Received</span>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="page-head">
+      <div class="container">
+        <span class="received reveal in-view">Message received</span>
+        <h1 class="reveal in-view d1" style="margin-top:24px;">Got it. Talk soon.</h1>
       </div>
     </section>
 
-    <section class="section ruled">
-      <div class="container">
-        <div class="sec-head">
-          <p class="sec-idx">While you wait</p>
-          <div class="sec-body stackd">
-            <h2>Here's what happens <em>next.</em></h2>
-            <p class="lede">Nothing about this is automated. Your message went straight into the same Atlas inbox QuikQuote's own clients use, and a real person — not a queue — reads it from there. Here's the shape of what typically happens from here.</p>
+    <section>
+      <div class="container thanks-grid">
+        <div class="reveal in-view d2">
+          <p class="lede">Your message went straight into the same Atlas leads inbox our clients use — not a ticket queue. Ethan reads it personally, usually the same day, and always within one business day.</p>
+
+          <div class="next-list">
+            <div class="next-item">
+              <span class="n">1</span>
+              <div>
+                <h3>A real reply</h3>
+                <p>Questions if anything's unclear, plus an honest first read on rough scope, timeline and price.</p>
+              </div>
+            </div>
+            <div class="next-item">
+              <span class="n">2</span>
+              <div>
+                <h3>Then, if it fits</h3>
+                <p>A short call, a sitemap, a written scope and a fixed quote — before any design work starts.</p>
+              </div>
+            </div>
+            <div class="next-item">
+              <span class="n">3</span>
+              <div>
+                <h3>And that's it</h3>
+                <p>No sales sequence, no newsletter, no automated drip. One reply, and whatever you decide from there.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-cta" style="justify-content:flex-start; margin-top:32px;">
+            <a class="btn btn-solid" href="/"><span>Back home</span></a>
+            <a class="btn" href="/#atlas"><span>See what Atlas does</span></a>
           </div>
         </div>
-        <ul class="info-list" style="max-width:680px;">
-          <li>Ethan reads it personally, usually the same day it arrives, and always within one business day — there's no support tier or ticket number involved, just a straight read of what you sent.</li>
-          <li>If anything about the project is unclear, you'll get a short reply with questions, plus an honest first read on rough scope, timeline and price based on similar builds.</li>
-          <li>If it looks like a fit, the next step is a short call to nail down the details, followed by a sitemap, a written scope and a fixed quote — before any design work starts.</li>
-          <li>There's no sales sequence, no newsletter, and no automated follow-up drip. Just this one reply, and then whatever you decide to do with it.</li>
-        </ul>
-        <div class="cta-row">
-          <a class="btn" href="/#demo"><span>Try the AI quote demo</span></a>
-          <a class="btn" href="/#platform"><span>See what Atlas does</span></a>
+
+        <div class="reveal in-view d3">
+          <div class="panel leads-rows" style="box-shadow: var(--shadow-card); border-color: var(--rule-2);" role="img" aria-label="Illustration of your message arriving in the Atlas leads inbox as a new lead.">
+            <div class="panel-head">Atlas · Leads inbox <span class="glance-v ok"><i></i>Delivered</span></div>
+            <div class="lead-row">
+              <span class="lead-ava">You</span>
+              <span class="lead-t"><b>Your enquiry</b><span>Just now — read by a real human, not a queue</span></span>
+              <span class="lead-right"><span class="mini-chip new">New</span></span>
+            </div>
+            <div class="glance-row">
+              <span class="glance-ic"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 1.6 11.8 3.4v3.2c0 2.8-2 4.9-4.8 5.8-2.8-.9-4.8-3-4.8-5.8V3.4L7 1.6Z"/><path d="m5 6.8 1.4 1.4 2.6-2.8"/></svg></span>
+              <span class="glance-t"><b>Reply window</b><span>Usually same day · always within one business day</span></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom" style="border-top:none; padding-top:34px;">
-        <span class="mono">© 2026 QuikQuote</span>
-        <span class="footer-legal">
-          <a href="/privacy">Privacy &amp; cookies</a>
-          <button type="button" data-consent-open>Cookie settings</button>
-        </span>
+      <div class="footer-bottom" style="border-top:0;">
+        <span class="mono">© 2026 QuikQuote — a PtacekVentures LLC company</span>
+        <span class="mono"><a href="/privacy">Privacy &amp; cookies</a> · <button type="button" data-consent-open style="font:inherit;color:inherit;letter-spacing:inherit;text-transform:inherit;">Cookie settings</button></span>
         <span class="mono">Built by Ethan Ptacek</span>
       </div>
     </div>
+    <div class="footer-plate" aria-hidden="true">
+      <div class="plate-media">
+        <img src="assets/art/town-square.webp" width="2400" height="1029" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
   </footer>
+
+  <script>
+    const navWrap = document.getElementById('nav');
+    addEventListener('scroll', () => {
+      navWrap.classList.toggle('is-stuck', scrollY > 8);
+    }, { passive: true });
+  </script>
 
   <script src="assets/js/consent.js" defer></script>
   <script src="/js/atlas.js" defer></script>
