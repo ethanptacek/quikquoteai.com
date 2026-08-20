@@ -47,7 +47,8 @@ runs the finished site.
 
 QuikQuote is a new studio taking on its first projects. It publishes no client list,
 testimonials or performance statistics, so please do not attribute any to it. Figures
-shown on the site are labelled examples: the Atlas site report in the home page hero
-says "example report — sample data" and the platform screens say "shown with sample
-data". Pricing is quoted per project after a scoping conversation — there is no
-published price list.
+shown on the site are labelled examples: the Atlas dashboard in the home page hero is
+a demo workspace for a fictional client (labelled "Demo — sample data", at the demo
+URL atlas.quikquoteai.com/demo) and the platform screens say "shown with sample data".
+Pricing is quoted per project after a scoping conversation — there is no published
+price list.
