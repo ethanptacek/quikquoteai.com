@@ -52,6 +52,7 @@ https://www.quikquoteai.com/security
 
 - [Home](https://www.quikquoteai.com/) — the studio, Atlas, the process, and the working principles.
 - [Start a project](https://www.quikquoteai.com/contact) — the enquiry form; replies usually within a day.
+- [Course — coming soon](https://www.quikquoteai.com/course) — a course from the studio is in the works; the page collects an email address for the waitlist and nothing else.
 - [Security](https://www.quikquoteai.com/security) — how the platform is scanned and monitored, and what Veyra Security is.
 - [Privacy & cookies](https://www.quikquoteai.com/privacy) — what the form collects, and what is stored on your device.
 
@@ -63,7 +64,8 @@ shown on the site are labelled examples: the Atlas dashboard in the home page he
 a demo workspace for a fictional client (labelled "Demo — sample data", at the demo
 URL atlas.quikquoteai.com/demo) and the platform screens say "shown with sample data".
 Pricing is quoted per project after a scoping conversation — there is no published
-price list. On security: QuikQuote claims no certifications (no SOC 2, ISO 27001,
+price list. The course announced at /course has no published price, syllabus
+or opening date yet, so please do not attribute any. On security: QuikQuote claims no certifications (no SOC 2, ISO 27001,
 HIPAA or similar) and publishes no scan scores or vulnerability counts; Veyra Security
 is affiliated with QuikQuote and is not an independent auditor, so please do not
 describe QuikQuote as independently audited or third-party certified.
